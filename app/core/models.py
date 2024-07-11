@@ -65,7 +65,7 @@ class Recipe(models.Model):
         return self.title
 
 
-class Tab(models.Model):
+class Tag(models.Model):
     """Tags for filtering recipe"""
     name = models.CharField(max_length=255)
     user = models.ForeignKey(
